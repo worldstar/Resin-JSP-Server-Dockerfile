@@ -10,3 +10,4 @@ CMD ["console"]
 #Reference
 # https://github.com/idi-ops/docker-resin
 # https://hub.docker.com/r/expertsystems/resin/~/dockerfile/
+# https://www.iyunv.com/thread-163040-1-1.html
