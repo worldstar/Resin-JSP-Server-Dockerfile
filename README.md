@@ -1,24 +1,16 @@
-# How to build and run your docker image on Google Cloud Platform
-Step 1: Add a file name as Dockerfile
-vi Dockerfile
-
-Step 2: Copy and paste the content from our example
-
-Step 3: Build the docker image on the Google Cloud
+# How to build and run the Resin docker image?
+-Step 1: Build the docker image from the Dockerfile. We may change the tag name of your own.<br />
 docker build -t gcr.io/PROJECT_ID/hello-node:v1 .
 
-Step 4: Run the docker image locally
+-Step 2: Run the docker image locally and map the container's port 8080 to the localhost. <br />
 docker run -d -p 8080:8080 gcr.io/PROJECT_ID/hello-node:v1
 
-Step 5: Test the Resin server and 
-curl http://localhost:8080
+-Step 3: Test the Resin server by the following address on your localhost browser.  <br />
+http://localhost:8080
 
-Step 6: Check the container and stop it
-docker ps
-docker stop YOUR_CONTAINER_ID
-
-Step 7: Upload the image to the GCP
+# Optinal: How to push docker image on Google Cloud Platform (GKE)?
+-Step 4: Upload the image to the GCP and please ensure you have the right PROJECT_ID. <br />
 gcloud docker push gcr.io/PROJECT_ID/hello-node:v1
 
---Step 8: Start a small container cluster 
---gcloud container clusters get-credentials hello-world --num-nodes 1 --machine-type g1-small
+-Step 5: Start a small container cluster  <br />
+gcloud container clusters get-credentials hello-world --num-nodes 1 --machine-type g1-small
