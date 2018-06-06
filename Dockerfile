@@ -4,7 +4,7 @@ RUN yum install -y http://www.caucho.com/download/rpm-6.8/4.0.56/x86_64/resin-4.
 RUN yum install -y java-1.8.0-openjdk-devel
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/share/resin-4.0.45/bin/resinctl"]
+ENTRYPOINT ["/usr/local/share/resin-4.0.56/bin/resinctl"]
 CMD ["console"]
 
 #Reference
