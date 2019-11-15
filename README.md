@@ -3,7 +3,7 @@
 docker build -t gcr.io/PROJECT_ID/hello-node:v1 .
 
 - Step 2: Run the docker image locally and map the container's port 8080 to the localhost. <br />
-docker run -d -p 8080:8080 gcr.io/PROJECT_ID/hello-node:v1
+docker run -d -p 8080:8080 --name resin2019 gcr.io/PROJECT_ID/hello-node:v1
 
 - Step 3: Test the Resin server by the following address on your localhost browser.  <br />
 http://localhost:8080/
@@ -17,3 +17,8 @@ gcloud docker push gcr.io/PROJECT_ID/hello-node:v1
 
 - Step 6: Start a small container cluster  <br />
 gcloud container clusters get-credentials hello-world --num-nodes 1 --machine-type g1-small
+
+# Clean up
+- Step 7: docker stop resin2019  <br />
+- Step 8: docker rm resin2019  <br />
+- Step 9: docker rmi gcr.io/PROJECT_ID/hello-node:v1  <br />
