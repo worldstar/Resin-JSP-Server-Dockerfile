@@ -6,7 +6,7 @@ RUN yum install -y java-1.8.0-openjdk-devel
 COPY index.jsp /var/resin/webapps/ROOT/
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/share/resin-4.0.56/bin/resinctl"]
+ENTRYPOINT ["/usr/local/share/resin-4.0.63/bin/resinctl"]
 CMD ["console"]
 
 #Reference
