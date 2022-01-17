@@ -6,5 +6,6 @@
 </head>
 <body>
 	<h1>Hello World on Container</h1>
+	<img src='Docker-Logo.png' />
 </body>
 </html>
