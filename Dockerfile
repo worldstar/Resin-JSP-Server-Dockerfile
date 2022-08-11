@@ -13,3 +13,4 @@ CMD ["console"]
 # https://github.com/idi-ops/docker-resin
 # https://hub.docker.com/r/expertsystems/resin/~/dockerfile/
 # https://www.iyunv.com/thread-163040-1-1.html
+# COPY vs ADD command. https://stackoverflow.com/questions/26504846/copy-directory-to-another-directory-using-add-command
